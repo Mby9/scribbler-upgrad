@@ -1,0 +1,75 @@
+body {
+  background: #ffeedd;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	width: 50%;
+	background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.name-title {
+	margin: auto;
+	text-align: justify;
+  color: grey;
+	padding: 30px;
+	max-width: 100px;
+}
+
+.card-container {
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+  width: 600px;
+  background-color: #fff;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+  cursor: pointer;
+	color: grey;
+  margin: 0 10px;
+}
+
+strong {
+	color: grey;
+}
+
+.blog-preview {
+	padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+#yes-button {
+  background-color: green;
+  width: 100px;
+}
+
+#no-button {
+  background-color: red;
+  width: 100px;
+}
+
+.prompt-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prompt-modal {
+  width: 350px;
+}

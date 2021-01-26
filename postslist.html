@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/postslist.css">
+    <script src="https://kit.fontawesome.com/b04c117742.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div>
+                <div class="scribbler-label">ScriBBler</div>
+                <div class="scribbler-sub-label">Explore, Imagine, Create</div>
+            </div>
+            <div>
+                <button class="sign-button" onclick="openModal('sign-up')">Sign Up</button>
+                <button class="sign-button" onclick="openModal('sign-in')">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal">
+        <div class="modal-content prompt-modal">
+            <p>Are you sure you want to delete this post?</p>
+            <div class="prompt-container">
+                <button id="yes-button" class="sign-button" onclick="deletePost()">Yes</button>
+                <button id="no-button" class="sign-button" onclick="hideDeletePostPrompt()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-container"></div>
+
+    <script src="scripts/postslist.js"></script>
+</body>
+
+</html>
