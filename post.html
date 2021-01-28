@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/postslist.css">
+    <link rel="stylesheet" href="styles/post.css">
     <script src="https://kit.fontawesome.com/b04c117742.js" crossorigin="anonymous"></script>
 </head>
 
@@ -23,9 +23,37 @@
         </div>
     </header>
 
-    <h1>Post</h1>
+    <div class="page-container">
 
-    <div id="page-container"></div>
+        <div class="flex justify-center">
+            <h1 id="post-heading" contenteditable="false"></h1>
+        </div>
+
+        <div class="flex spaced-between align-center">
+            <strong id="name-label"></strong>
+            <button id="save-button" class="sign-button edit-btn display-none" onclick="savePost()">Save <i class="fas fa-save"></i></button>
+            <button id="edit-button" class="sign-button edit-btn" onclick="startEditing()">Edit <i class="fas fa-edit"></i></button>
+        </div>
+
+        <p id="post-content" contenteditable="false"></p>
+
+        <div class="flex fd-col">
+            <button class="sign-button edit-btn" id="like-btn" onclick="addLike()"><i class="fas fa-thumbs-up"></i> Like</button>
+            <label id="like-label" class="font-70pc">Be the first one to like this!</label>
+        </div>
+
+        <div class="flex fd-col mt-20">
+            <textarea class="ht-80 ml-2" id="comment-area" placeholder="Leave a comment..."></textarea>
+            <button class="sign-button edit-btn" onclick="addComment()">Comment</button>
+        </div>
+        
+        <h3>All Comments</h3>
+
+        <div id="comments" class="comment-container display-none"></div>
+    </div>
+
+    <script src="scripts/blogs.js"></script>
+    <script src="scripts/post.js"></script>
 
 </body>
 

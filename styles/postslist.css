@@ -30,6 +30,10 @@ body {
   background-color: #fff;
 }
 
+.card-container:hover {
+	box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+}
+
 .icon-container {
     display: flex;
     justify-content: space-between;
